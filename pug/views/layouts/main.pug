@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html
+  head
+    title='Formulario de Ingreso de Productos'
+  body
+    h2='Ingrese Producto'
+    form(action="/productos" method="POST")
+      label(for="title") Nombre: 
+      input(type="text" name="title") 
+      label(for="price") Precio: 
+      input(type="text" name="price")
+      label(for="price") FotoURL: 
+      input(type="text" name="thumbnail")
+      br
+      button='Enviar'
+    br
+    a(href="/productos")
+      button='Listado de Productos'
